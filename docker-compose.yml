@@ -1,0 +1,10 @@
+version: "2.1"
+
+services:
+    nodered:
+        image: kaii/nodered_custom_rpi
+        ports:
+            - 1880:1880
+        volumes:
+            - ./data:/data
+        network_mode: host
